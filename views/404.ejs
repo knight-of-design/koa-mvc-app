@@ -1,0 +1,11 @@
+<%
+  title = 'Page not found';
+%>
+
+<h1>Page not found</h1>
+<h3>Sorry, but the page you were looking for could not be found.</h3>
+
+<% if (data) { %>
+  <h3>Details: </h3>
+  <pre><%= data %></pre>
+<% } %>

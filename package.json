@@ -1,0 +1,56 @@
+{
+  "name": "koa-mvc-app",
+  "version": "1.1.1",
+  "description": "Lightweight MVC framework for Koa",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "grunt default",
+    "lint": "grunt lint",
+    "test": "mocha",
+    "postinstall": "if ! test \"$NODE_ENV\" = \"production\" ; then mkdir -p .git/hooks && cp -f git-hooks/pre-commit .git/hooks/ && chmod 755 .git/hooks/pre-commit ; fi"
+  },
+  "keywords": [
+    "koa",
+    "mvc"
+  ],
+  "author": "James Knight",
+  "license": "MIT",
+  "dependencies": {
+    "bigal": "^1.0.3",
+    "bowser": "^1.9.1",
+    "device": "^0.3.8",
+    "html-minifier": "^3.5.7",
+    "kcors": "^2.2.1",
+    "koa": "^2.4.1",
+    "koa-bodyparser": "^4.2.0",
+    "koa-compose": "^4.0.0",
+    "koa-compress": "^2.0.0",
+    "koa-ejs": "^4.1.0",
+    "koa-favicon": "^2.0.0",
+    "koa-helmet": "^3.3.0",
+    "koa-router": "^7.3.0",
+    "koa-send": "^4.1.2",
+    "librato-node": "^5.0.2",
+    "lodash": "^4.17.4",
+    "mz": "^2.7.0",
+    "pg": "^7.4.0",
+    "uuid": "^3.1.0",
+    "winston": "^2.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.13.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-compress": "^1.4.3",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-eslint": "^20.1.0",
+    "grunt-jsbeautifier": "^0.2.13",
+    "grunt-sass": "^2.0.0",
+    "grunt-staged2": "^0.1.1",
+    "grunt-sync": "^0.7.0"
+  }
+}

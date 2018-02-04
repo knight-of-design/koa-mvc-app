@@ -1,0 +1,68 @@
+{
+  "root": true,
+  "extends": "airbnb-base",
+  "env": {
+    "node": true
+  },
+  "parserOptions": {
+    "sourceType": "script"
+  },
+  "globals": {
+    "KoaConfig": true
+  },
+  "rules": {
+    "array-bracket-spacing": ["error", "never"],
+    "brace-style": ["error", "1tbs"],
+    "comma-dangle": ["error", "always-multiline"],
+    "consistent-return": "off",
+    "computed-property-spacing": ["error", "never"],
+    "handle-callback-err": ["error", "^.*err" ],
+    "max-len": "off",
+    "new-cap": "off",
+    "no-console": "off",
+    "no-else-return": "error",
+    "no-eq-null": "off",
+    "no-extra-semi": "error",
+    "no-loop-func": "off",
+    "no-lone-blocks": "error",
+    "no-negated-condition": "error",
+    "no-param-reassign": "off",
+    "no-shadow": "off",
+    "no-undef": "error",
+    "no-underscore-dangle": "off",
+    "no-use-before-define": ["error", "nofunc"],
+    "no-useless-rename": "error",
+    "object-curly-spacing": ["error", "always", { "objectsInObjects": true, "arraysInObjects": false }],
+    "quotes": "off",
+    "quote-props": ["error", "as-needed"],
+    "keyword-spacing": "error",
+    "space-before-blocks": "error",
+    "space-before-function-paren": ["error", {"anonymous": "always", "named": "never"}],
+    "space-in-parens": "off",
+    "strict": "error",
+    "no-empty": "error",
+    "no-empty-function": "error",
+    "yoda": "error",
+
+    // Override airbnb
+    "padded-blocks": "off",
+    "eqeqeq": ["error", "smart"],
+    "func-names": "error",
+    "id-length": ["error", {"exceptions": ["$", "e", "i", "j", "k", "q", "x", "y", "_"]}],
+    "indent": ["off", 2, {"SwitchCase": 1}],
+    "radix": "off",
+    "spaced-comment": "off",
+    "generator-star-spacing": ["error", {"before": false, "after": true}],
+    "arrow-body-style": "off",
+    "newline-per-chained-call": "off",
+    "no-restricted-syntax": [
+      "error",
+      "DebuggerStatement",
+      "LabeledStatement",
+      "WithStatement"
+    ],
+    "arrow-parens": ["error", "always"],
+    "prefer-arrow-callback": ["error", { "allowNamedFunctions": true }],
+    "prefer-spread": "error"
+  }
+}

@@ -1,0 +1,11 @@
+<%
+  title = 'No Permission';
+%>
+
+<h1>No permission</h1>
+<h3>Doesn't look like you have the permissions to visit that page.</h3>
+
+<% if (data) { %>
+  <h3>Details: </h3>
+  <pre><%= data %></pre>
+<% } %>

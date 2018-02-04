@@ -1,0 +1,11 @@
+<%
+  title = 'Server Error';
+%>
+
+<h1>Server error</h1>
+<h3>Sorry, there was a problem and it's on our end.</h3>
+
+<% if (data) { %>
+  <h3>Details</h3>
+  <pre><% if (data instanceof Error && data.stack && !data.inspect) { %><%= data.stack %><% } else { %><%= data %><% } %></pre>
+<% } %>

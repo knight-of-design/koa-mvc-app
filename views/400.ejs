@@ -1,0 +1,11 @@
+<%
+  title = 'Bad request';
+%>
+
+<h1>Bad request</h1>
+<h3>Your browser sent a request that this server could not understand.</h3>
+
+<% if (data) { %>
+  <h3>Details: </h3>
+  <pre><%= data %></pre>
+<% } %>
